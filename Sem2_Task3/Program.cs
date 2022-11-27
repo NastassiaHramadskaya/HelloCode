@@ -29,16 +29,38 @@
 
 // Кратное число - это число, делящееся на данное целое число без остатка. Например : 12 кратно числу 3 , так как 12 делиться на 3.
 
+// Console.Clear();
+// Console.Write("Введите первое число: ");
+// int number = int.Parse(Console.ReadLine());
+// int divA = 7;
+// int divB = 23;
+// if (number % divA == 0 && number % divB == 0)
+// {
+//     Console.Write($"{number}-> кратно");
+// }
+// else
+// {
+//     Console.Write($"{number}-> не кратно");
+// }
+
+// Напишите программу, которая принимает на вход два числа и проверяет, является ли одно число квадратом другого.
+// 5, 25 -> да
+// -4, 16 -> да
+// 25, 5 -> да
+// 8,9 -> нет
+
 Console.Clear();
 Console.Write("Введите первое число: ");
-int number = int.Parse(Console.ReadLine());
-int divA = 7;
-int divB = 23;
-if (number % divA == 0 && number % divB == 0)
+int numberA = int.Parse(Console.ReadLine());
+
+Console.Write("Введите второе число: ");
+int numberB = int.Parse(Console.ReadLine());
+
+if ((numberA * numberA == numberB) || (numberB * numberB == numberA))
 {
-    Console.Write($"{number}-> кратно");
+    Console.Write($"{numberA}, {numberB}-> yes");
 }
 else
 {
-    Console.Write($"{number}-> не кратно");
+    Console.Write($"{numberA}, {numberB}-> no");
 }
